@@ -1,0 +1,52 @@
+[
+    {
+       "Question": "Favorite Thing to do",
+       "answerOptions": [
+            { "answerText": "Football", "isCorrect": false },
+            { "answerText": "Basketball", "isCorrect": false },
+            { "answerText": "Bowling", "isCorrect": false },
+            { "answerText": "Coding", "isCorrect": true },
+            { "answerText": "Fighting", "isCorrect": false }
+        ]
+    },
+    {
+        "Question": "Favorite unstable Element",
+        "answerOptions": [
+            { "answerText": "Uranium", "isCorrect": false },
+            { "answerText": "Radium", "isCorrect": false },
+            { "answerText": "Polonium", "isCorrect": true },
+            { "answerText": "Neptium", "isCorrect": false },
+            { "answerText": "Laughter", "isCorrect": false }
+        ]
+    },
+    {
+        "Question": "Favorite Doomsday device",
+        "answerOptions": [
+            { "answerText": "Quantum Eigenstate Device", "isCorrect": false },
+            { "answerText": "The Amoeba", "isCorrect": false },
+            { "answerText": "Annihilargh", "isCorrect": false },
+            { "answerText": "Infinity Guantlet", "isCorrect": false },
+            { "answerText": "Displacement Engine", "isCorrect": true }
+        ]
+    },
+    {
+        "Question": "Best 'The Office' Character",
+        "answerOptions": [
+            { "answerText": "Dwight Schrute", "isCorrect": false },
+            { "answerText": "Jim", "isCorrect": true },
+            { "answerText": "Angela", "isCorrect": false },
+            { "answerText": "Micheal Scott", "isCorrect": false },
+            { "answerText": "Erin", "isCorrect": false }
+        ]
+    },
+    {
+        "Question": "Favorite Color",
+        "answerOptions": [
+            { "answerText": "Puce", "isCorrect": true },
+            { "answerText": "Damask", "isCorrect": false },
+            { "answerText": "Jasper", "isCorrect": false },
+            { "answerText": "Smelt", "isCorrect": false },
+            { "answerText": "Vermilion", "isCorrect": false }
+        ] 
+    }
+]
