@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import { useLayoutEffect, useEffect, useState, useRef, useCallback } from 'react'; 
 import data from './data/questions.json';
 import project from './data/projects.json'; 
-import { Time } from '../components';
 
 export default function Home() {
   // new Time();
@@ -58,8 +57,8 @@ export default function Home() {
           <p className={styles.quiz_number}>{currentQuestion + 1}/{data.length}</p>
         </div>
         <div className={styles.quiz_options}>
-          {data[currentQuestion].answerOptions.map((answerOption) => (
-            <div className={styles.quiz_option} id="quiz_option" ref={option}>
+          {data[currentQuestion].answerOptions.map((answerOption, index) => (
+            <div className={styles.quiz_option} id="quiz_option" ref={option} key={index}>
               <p className={styles.option_name} onClick={()=>optionClick(answerOption.isCorrect)}>{answerOption.answerText}</p>
             </div>
           ))}
@@ -242,8 +241,8 @@ export default function Home() {
     return(
       <div className={styles.project_lists}>
       {
-        newData['Frontend']?.map((project)=>(
-          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} />
+        newData['Frontend']?.map((project, index)=>(
+          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} key={index}/>
         ))
       }
       </div>
@@ -254,8 +253,8 @@ export default function Home() {
     return(
       <div className={styles.project_lists}>
         {
-        newData['Backend']?.map((project)=>(
-          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} />
+        newData['Backend']?.map((project, index)=>(
+          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} key={index}/>
         ))
       }
     </div>
@@ -266,8 +265,8 @@ export default function Home() {
     return(
       <div className={styles.project_lists}>
       {
-        newData['Fullstack']?.map((project)=>(
-          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} />
+        newData['Fullstack']?.map((project, index)=>(
+          <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} key={index}/>
         ))
       }
       </div>
@@ -287,8 +286,8 @@ export default function Home() {
     return(
       <div className={styles.project_lists}>
             {
-              project.map((project)=>(
-                <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} />
+              project.map((project, index)=>(
+                <ProjectList year={project.year} projectName={project.title} link={`/project/${project.title.toLowerCase().split(' ').join('-')}`} key={index}/>
               ))
             }
       </div>
@@ -365,6 +364,7 @@ useEffect(()=>{
 })
 
   return (
+    <>
     <div className={ showPreloader ? styles.theboss_pro : styles.theboss}>
         <Head>
         <title>Emmanuel Omoiya - Full Stack Developer</title>
@@ -416,8 +416,8 @@ useEffect(()=>{
       <div className={styles.hero}>
         <div className={styles.exist_sd}>
           <div className={styles.oed}>
-            <a className={styles.gd} href="https://github.com/EmmanuelOmoiya" target="_blank">Github</a>
-            <a className={styles.gd} href="https://twitter.com/Emmanuel_Omoiya" target="_blank">Twitter</a>
+            <a className={styles.gd} href="https://github.com/EmmanuelOmoiya" target="_blank" rel="noreferrer">Github</a>
+            <a className={styles.gd} href="https://twitter.com/Emmanuel_Omoiya" target="_blank" rel="noreferrer">Twitter</a>
           </div>
         <div className={styles.header}>
           <div className={styles.main_header} onMouseEnter={()=> setIsHover(!isHover)} onMouseLeave={()=> setIsHover(!isHover)} style={{ transition: "all .2s ease-in-out"}}>
@@ -430,7 +430,7 @@ useEffect(()=>{
           </div>
         </div>
         <div className={styles.res}>
-          <a className={styles.gd} href="https://www.linkedin.com/in/emmanuelomoiya/" target="_blank">Linkedin</a>
+          <a className={styles.gd} href="https://www.linkedin.com/in/emmanuelomoiya/" target="_blank" rel="noreferrer">Linkedin</a>
           <p className={styles.gd_time}>{date.slice(0, date.length-2)} WAT</p>
         </div>
         <div className={showMenu ? styles.menu_activ : styles.menu} style={{ transition: "all .2s ease-in-out" }}>
@@ -440,9 +440,9 @@ useEffect(()=>{
             <p className={styles.head_name_op} style={{ transition: "all .2s ease-in-out", cursor: 'pointer'}} onClick={()=> setShowMenu(!showMenu)}>OMOIYA</p>
           </div>
         </div>
-          <p><a className={styles.github_men} target="_blank" href="https://github.com/EmmanuelOmoiya">Github</a></p>
-          <p><a className={styles.linkedin_men} target="_blank" href="https://linkedin/in/emmanuelomoiya">LinkedIn</a></p>
-          <p><a className={styles.twitter_men} target="_blank" href="https://twitter.com/Emmanuel_Omoiya">Twitter</a></p>
+          <p><a className={styles.github_men} target="_blank" href="https://github.com/EmmanuelOmoiya" rel="noreferrer">Github</a></p>
+          <p><a className={styles.linkedin_men} target="_blank" href="https://linkedin/in/emmanuelomoiya" rel="noreferrer">LinkedIn</a></p>
+          <p><a className={styles.twitter_men} target="_blank" href="https://twitter.com/Emmanuel_Omoiya" rel="noreferrer">Twitter</a></p>
           <p className={styles.time_men}>{date.slice(0, date.length-2)} WAT</p>
         </div>
         </div>
@@ -458,13 +458,13 @@ useEffect(()=>{
           <div className={styles.choice_job}>
           {
             [< FrontendText />, < BackendText />, <FullStackText />].map((item, index)=>{
-              return <p className={styles.carousel_item} style={{ transform:`translateY(-${currentIndex * 10}rem)` }} key={index} >{item}</p>
+              return <p className={styles.carousel_item} key={index}  style={{ transform:`translateY(-${currentIndex * 10}rem)` }} >{item}</p>
             })
           }
           </div>
           <p className={styles.dev} id="developer">DEVELOPER</p>
         </div>
-        <p className={styles.hero_quote} id="dbestperson">The best person to ever do 'it' and also a very humble individual. Currently <b>available to work</b> </p>
+        <p className={styles.hero_quote} id="dbestperson">The best person to ever do &apos;it&apos; and also a very humble individual. Currently <b>available to work</b> </p>
       </div>
       <div className={styles.whomoiya}>
         <div className={styles.fes}>
@@ -472,7 +472,7 @@ useEffect(()=>{
           <div className={styles.head_spch} >
             <p id="whomoiya"> WH<span className={styles.hollow} id="whomoiya">O</span></p><span className={styles.hollow}>MOIYA</span>
           </div>
-          <p className={styles.find_out} id="findoutsimilar">Find out how similar we are by taking the 'get to know me' quiz</p>
+          <p className={styles.find_out} id="findoutsimilar">Find out how similar we are by taking the &apos;get to know me&apos; quiz</p>
         </div>
         <Image src={'/assets/img/Detective.svg'} width={280} height={360} alt="Emmanuel" id="detectiveimg"/>
         </div>
@@ -534,5 +534,6 @@ useEffect(()=>{
       </div>
     </div>
     </div>
+    </>
   )
 }
