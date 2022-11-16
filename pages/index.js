@@ -378,7 +378,7 @@ useEffect(()=>{
         <meta
           key="og-description"
           property="og:description"
-          content="My personal portfolio"
+          content="FullStack Developer"
         />
         <meta
           key="og-url"
@@ -389,7 +389,7 @@ useEffect(()=>{
         <meta
           key="twitter-description"
           name="twitter:description"
-          content="My personal portfolio"
+          content="FullStack Developer"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@Emmanuel_Omoiya" />
