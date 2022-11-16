@@ -372,7 +372,7 @@ useEffect(()=>{
         <meta
           key="description"
           name="description"
-          content="My personal portfolio "
+          content="FullStack Developer"
         />
         <meta key="og-title" property="og:title" content="Emmanuel Omoiya" />
         <meta
@@ -395,7 +395,7 @@ useEffect(()=>{
         <meta name="twitter:site" content="@Emmanuel_Omoiya" />
         <meta
           name="twitter:image"
-          content={`https://epic.asva.com/assets/medialogo.png`}
+          content={`/Favicon.svg`}
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/Favicon.svg" />

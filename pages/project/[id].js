@@ -60,7 +60,7 @@ const Projects = ({projectInfo, cat}) => {
         <meta
           key="description"
           name="description"
-          content="My personal portfolio "
+          content="FullStack Developer"
         />
         <meta key="og-title" property="og:title" content="Emmanuel Omoiya" />
         <meta
@@ -83,7 +83,7 @@ const Projects = ({projectInfo, cat}) => {
         <meta name="twitter:site" content="@Emmanuel_Omoiya" />
         <meta
           name="twitter:image"
-          content={`https://epic.asva.com/assets/medialogo.png`}
+          content={`/Favicon.svg`}
         />
       </Head>
     <div className={styles.project}>
