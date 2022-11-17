@@ -368,7 +368,7 @@ useEffect(()=>{
     <div className={ showPreloader ? styles.theboss_pro : styles.theboss}>
         <Head>
         <title>Emmanuel Omoiya - Full Stack Developer</title>
-        <meta key="keywords" name="keywords" content={`Emmanuel, Omoiya, Emmanuel Omoiya, Omoiya Emmanuel`} />
+        <meta key="keywords" name="keywords" content={`Emmanuel, Omoiya, Emmanuel Omoiya, Omoiya Emmanuel, Software Engineer, Mechatronics Engineering, Fullstack Developer, Developer, Frontend Developer, Backend Devekoper`} />
         <meta
           key="description"
           name="description"

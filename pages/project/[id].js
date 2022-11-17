@@ -26,22 +26,29 @@ export const getStaticProps = async({params}) => {
 const { id } = params;
 const red = id.split('-').join(' ').toString();
   const projectInfo = projects.find((project)=> project.title.toString().toLocaleLowerCase() === red );
-  console.log(projectInfo.category)
+  console.log(projectInfo.category);
   let newData = projects.reduce(function (obj, v, i){
     obj[v.category] = obj[v.category] || [];
     obj[v.category].push(v);
     return obj;
   }, {});
   let cat = newData[projectInfo.category];
+  console.log(cat)
+  const index = cat.findIndex(object => {
+    return object.title.toString().toLocaleLowerCase() === red
+  })+1
+  console.log(index);
+  let ced = cat[index];
   return{
     props: {
       projectInfo,
-      cat
+      cat,
+      ced
     },
   };
 };
 
-const Projects = ({projectInfo, cat}) => {
+const Projects = ({projectInfo, cat, ced}) => {
   const router = useRouter();
   useLayoutEffect(() => {
     let cti = gsap.context(()=>{
@@ -56,7 +63,7 @@ const Projects = ({projectInfo, cat}) => {
     <>
             <Head>
         <title>Emmanuel Omoiya - {projectInfo?.title}</title>
-        <meta key="keywords" name="keywords" content={`Emmanuel, Omoiya, Emmanuel Omoiya, Omoiya Emmanuel`} />
+        <meta key="keywords" name="keywords" content={`Emmanuel, Omoiya, Emmanuel Omoiya, Omoiya Emmanuel, Software Engineer, Mechatronics Engineering, Fullstack Developer, Developer, Frontend Developer, Backend Devekoper`} />
         <meta
           key="description"
           name="description"
@@ -96,7 +103,7 @@ const Projects = ({projectInfo, cat}) => {
           <p className={styles.project_detail_description} id="did">Passionate developer who loves to take on new challenges and explore new terrain. Currently available to work</p>
           <div className={styles.derc}>
             <a className={styles.project_detail_link} id="did" href={projectInfo?.link} target="_blank" rel='noopener noreferrer'>Check it out <Image src={'/assets/img/Arrow.svg'} width={10} height={10} alt="Arrow"/></a>
-            <p className={styles.project_detail_next}id="did">Next: Coming Money Pro</p>
+            <a className={styles.project_detail_next}id="did" href={`/project/${ced.title.toLowerCase().split(' ').join('-')}`}>Next: {ced.title}</a>
           </div>
         </div>
         <div className={styles.project_marquee}>

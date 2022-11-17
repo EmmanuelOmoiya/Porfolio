@@ -92,7 +92,7 @@
   }
 
   .hero{
-    height: 80vh;
+    height: auto;
     padding: 1.4rem 1.5rem;
     background-color: #F1EFED;
   }
@@ -149,7 +149,7 @@
   .hero_quote{
     font-size: .8rem;
     font-weight: 900;
-    font-family: 'Switzer-Thin';
+    font-family: 'Switzer-Thin', 'CabinetGrotesk-Regular', sans-serif;
     color: #151515;
     width: 69%;
     margin-left: auto;
@@ -413,6 +413,7 @@
 
   .project_detail_description{
     font-family: 'Switzer-Thin', sans-serif;
+    opacity: 1;
   }
   
   .project_detail_link{
@@ -443,7 +444,8 @@
   .project_close{
     width: auto;
     padding: 0.4rem 1rem;
-    border: 1px solid #151515;
+    border: 1px solid #fff;
+    color: #fff;
     border-radius: 20px;
     position: fixed;
     right: 0;
@@ -695,7 +697,7 @@
   .hero_quote{
     font-size: 1rem;
     font-weight: 900;
-    font-family: 'Switzer-Thin';
+    font-family: 'Switzer-Thin', 'CabinetGrotesk-Regular', sans-serif;
     color: #151515;
     width: 39%;
     margin-right: 7vw;
