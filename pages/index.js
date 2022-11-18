@@ -474,7 +474,7 @@ useEffect(()=>{
           </div>
           <p className={styles.find_out} id="findoutsimilar">Find out how similar we are by taking the &apos;get to know me&apos; quiz</p>
         </div>
-        <Image src={'/assets/img/Detective.svg'} width={280} height={360} alt="Emmanuel" id="detectiveimg"/>
+        <Image src={'/assets/img/Detective.svg'} width={280} height={360} alt="Emmanuel" id="detectiveimg" priority={true}/>
         </div>
         {showScore ? (
 				<div className={styles.score_section}>

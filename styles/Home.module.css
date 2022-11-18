@@ -584,7 +584,7 @@
     border: 1px solid #8c8986;
     text-transform: uppercase;
     width: 70vw;
-    height: 1.6rem;
+    height: 3.5vh;
     text-align: center;
     align-items: center;
   }
@@ -616,18 +616,18 @@
   }
 
   .gd{
-    font-size: 0.8rem;
+    font-size: 1.9vh;
     font-family: 'Switzer-Light', sans-serif;
     font-weight: 500;
   }
 
   .gd_time{
     font-family: 'Switzer-Regular', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1.9vh;
   }
 
   .hero{
-    height: auto;
+    height: 100vh;
     padding: 1.4rem 1.5rem;
     background-color: #F1EFED;
   }
@@ -647,7 +647,7 @@
 
   .freelance{
     font-family: 'Switzer-Regular', sans-serif;
-    font-size: 6.6rem;
+    font-size: 19vh;
     /* margin-top: 4rem; */
     text-align: center;
     align-items: center;
@@ -695,7 +695,7 @@
   }
 
   .hero_quote{
-    font-size: 1rem;
+    font-size: 2.6vh;
     font-weight: 900;
     font-family: 'Switzer-Thin', 'CabinetGrotesk-Regular', sans-serif;
     color: #151515;
@@ -735,7 +735,7 @@
   }
 
   .head_spch{
-    font-size: 4.6rem;
+    font-size: 12vh;
     font-weight: 800;
     line-height: .2rem;
     margin-top: -0.8rem;
@@ -746,14 +746,14 @@
 	-webkit-text-stroke-width: .005px;
     -webkit-text-stroke-color: white;
     font-family: 'Inter', sans-serif;
-    font-size: 4.6rem;
+    font-size: 12vh;
   }
 
   .find_out{
     font-family: 'Switzer-Light', sans-serif;
     color: #8c8986;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 2.7vh;
     width: 54%;
     margin-top: 3.8rem;
     margin-left: 4.6rem;
@@ -795,7 +795,7 @@
 
   .quiz_title,
   .quiz_number{
-    font-size: 1.1rem;
+    font-size: 2.8vh;
   }
 
   .quiz_options{
@@ -813,7 +813,7 @@
     border: 1px solid #8c8986;
     border-radius: 6px;
     padding: 0rem 1rem;
-    font-size: 1.1rem;
+    font-size: 2.8vh;
     text-align: center;
     cursor: pointer;
   }
@@ -841,12 +841,12 @@
   .projects_section{
     height: auto;
     background-color: #F1EFED;
-    padding: 6.2rem;
+    padding: 11vh;
   }
   
   .projects_header{
     display: flex;
-    font-size: 1.5rem;
+    font-size: 3vh;
     font-family: 'Switzer-Light', sans-serif;
     color: #151515;
     margin-bottom: 1.5rem;
@@ -890,7 +890,7 @@
     font-family: 'CabinetGrotesk-Regular', sans-serif;
     text-align: center;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 2.7vh;
     padding: 0.5rem;
     transition: all .2s ease-in-out;
     cursor: pointer;
@@ -911,6 +911,7 @@
     margin-left: auto;
     font-family: 'CabinetGrotesk-Regular', sans-serif;
     margin-right: auto;
+    padding: 0 11vh;
   }
 
   .marquee{
@@ -921,9 +922,9 @@
     padding: 0 1rem;
     font-family: 'CabinetGrotesk-Regular', sans-serif;
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 2.7vh;
     text-align: center;
-    width: 86%;
+    /* width: 86%; */
     margin-left: auto;
     margin-right: auto;
     align-items: center;
@@ -942,7 +943,8 @@
     text-align: center;
     align-items: center;
     margin-top: 1rem;
-    width: 86%;
+    font-size: 2.5vh;
+    /* width: 86%; */
   }
 
   .flinks{
@@ -972,14 +974,15 @@
   }
 
   .project_detail_name{
-    font-size: 3rem;
+    font-size: 6.5vh;
     margin-bottom: 3.2rem;
   }
 
   .project_detail_description{
     font-family: 'Switzer-Regular', sans-serif;
     font-weight: 400;
-    margin-top: 40vh;
+    font-size: 2.6vh;
+    margin-top: 46vh;
   }
   
   .project_detail_link{
@@ -995,7 +998,7 @@
   .project_detail_link{
     text-transform: uppercase;
     font-family: 'Switzer-Light', sans-serif;
-    font-size: 0.9rem;
+    font-size: 2.4vh;
     opacity: .8;
   }
 
@@ -1035,7 +1038,7 @@
     right: 0;
     top: 0;
     cursor: pointer;
-    font-size: 0.8rem;
+    font-size: 2.2vh;
     margin-right: 1rem;
   }
 
