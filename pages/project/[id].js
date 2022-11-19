@@ -92,6 +92,8 @@ const Projects = ({projectInfo, cat, ced}) => {
           name="twitter:image"
           content={`/Favicon.svg`}
         />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/Favicon.svg" />
       </Head>
     <div className={styles.project}>
       <div className={styles.project_image}>
