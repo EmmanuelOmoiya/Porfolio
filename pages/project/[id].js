@@ -109,6 +109,7 @@ const Projects = ({projectInfo, cat, ced}) => {
           </div>
         </div>
         <div className={styles.project_marquee}>
+          <div className={styles.mmmnyt}>
           {
             cat?.map((category)=>(
               <>
@@ -116,6 +117,7 @@ const Projects = ({projectInfo, cat, ced}) => {
               </>
             ))
           }
+          </div>
         </div>
         <p className={styles.project_close} onClick={()=> router.back()}>[X] Close</p>
     </div>

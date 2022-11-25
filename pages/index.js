@@ -441,7 +441,7 @@ useEffect(()=>{
           </div>
         </div>
           <p><a className={styles.github_men} target="_blank" href="https://github.com/EmmanuelOmoiya" rel="noreferrer">Github</a></p>
-          <p><a className={styles.linkedin_men} target="_blank" href="https://linkedin/in/emmanuelomoiya" rel="noreferrer">LinkedIn</a></p>
+          <p><a className={styles.linkedin_men} target="_blank" href="https://linkedin.com/in/emmanuelomoiya" rel="noreferrer">LinkedIn</a></p>
           <p><a className={styles.twitter_men} target="_blank" href="https://twitter.com/Emmanuel_Omoiya" rel="noreferrer">Twitter</a></p>
           <p className={styles.time_men}>{date.slice(0, date.length-2)} WAT</p>
         </div>
@@ -520,10 +520,16 @@ useEffect(()=>{
     </div> 
     } 
     <div className={styles.footer} >
+    <a href="mailto:emmanuelomoiya6@gmail.com">
       <div className={styles.marquee} >
-        <p className={styles.email}><a href="mailto:emmanuelomoiya6@gmail.com" className={styles.email}>emmanuelomoiya6@gmail.com</a></p>
+        <div className={styles.movement}>
+        <p className={styles.got_a_joke}>Want to say hi?</p>
+        <p className={styles.email}>emmanuelomoiya6@gmail.com</p>
         <p className={styles.got_a_joke}>got a good joke?</p>
+        <p className={styles.email}>emmanuelomoiya6@gmail.com</p>
+        </div>
       </div>
+      </a>
       <div className={styles.flonks} id="flonks">
         <p className={styles.designed_by}><a href="https://jojosportfolio.notion.site/JOJO-AKINDE-eafadbc4622348feb24bc65842ab4e52" className={styles.flink}>Design by Jojo</a></p>
         <div className={styles.flinks}>
